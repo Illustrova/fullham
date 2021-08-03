@@ -1,0 +1,45 @@
+{
+  "name": "vanilla-parcel-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple workflow starter for building vanilla JS apps",
+  "scripts": {
+    "dev": "npm run clean && parcel serve  public/*.html --no-cache  -p 3000",
+    "build": "rimraf ./dist && parcel build public/*.html  --public-url ./",
+    "clean": "rimraf ./development && rimraf ./.cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradtraversy/vanilla-parcel-boilerplate.git"
+  },
+  "keywords": [
+    "parcel"
+  ],
+  "author": "Brad Traversy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bradtraversy/vanilla-parcel-boilerplate/issues"
+  },
+  "homepage": "https://github.com/bradtraversy/vanilla-parcel-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "parcel": "^2.0.0-rc.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.3",
+    "sharp": "^0.28.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "fabric": "^4.5.1",
+    "fabricjs": "^1.0.0"
+  }
+}
